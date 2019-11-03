@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+
+}
+body
+        {
+            margin: 0;
+            background-color: white;
+        }
+a{
+    text-decoration: none;
+}
+.h-panel{
+ width: 1130px;
+ margin: 0 auto;    
+}
+.h-panel .h-logo{
+    width: 200px;
+    height: 98px;
+    display: block;
+    background-image: url("./mistore_logo.png");
+    margin-left: 0px;
+    margin-top: 0;
+    }
+    .back{
+    width: 410px;
+    height: 588px;
+    margin-bottom: 50px;
+    margin-right: 0;
+    font-size: 14px;
+    background-color: #fff;
+    margin: -19px auto 20px;
+    }
+.back .h-banner{
+    background-image: url("./e8201bfbb8c9d474a48da76f7d81a5c7.jpg");  
+    width: 100%;
+    height: 588px;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 0;
+    
+    }
+   .back .h-banner .show{
+       width: 1130px;
+       height: 686px;
+       margin: 0 auto;
+       overflow: hidden;
+   }
+   .back .show .login{
+        width: 410px;
+        height: 556px;
+        padding: 0;
+        margin-top: 32px;
+        background-color:white;
+        font-size: 14px;
+        float:right;
+        
+}
+
+
+.h-banner .login .tabs{
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    height: 32px;
+}
+.login .tabs .link{
+    color: #f56600;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 50px;
+    float: left;
+}
+.tabs .link:hover{
+    color:#f56600;
+    cursor: pointer;
+}
+.login .tabs .line{
+    width: 1px;
+    height: 24px;
+    margin: 5px 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    padding:0;
+    float: left;
+    display: inline-block;
+    
+}
+
+.login .tabs .link-2{
+    color: #666;
+    text-align: center;
+    font-size: 24px;
+    padding-right: 50px;
+}
+.tabs .link-2:hover{
+    color: #f56600;
+    cursor: pointer;
+}
+.login .tabs-cone{
+width:410px;
+height:416.2px;
+padding: 0;
+margin: 0;  
+display: block;
+}
+.login .tabs-cone .input-bg{
+width: 348px;
+height:124px;
+
+}
+.login .tabs-cone .select{
+    border: 1px solid #e0e0e0;
+    width: 348px;
+    height: 50px;
+    margin-left: 30px;  
+
+}
+.tabs-cone .select .box{
+    width: 346px;
+    height: 48px;
+}
+.select .box input{
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    outline: none;
+    border: 0;
+    color:#999;
+    font-size: 14px;
+}
+
+.login .tabs-cone .select-2{
+    border: 1px solid #e0e0e0;
+    width: 348px;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+    .tabs-cone .select-2 .box-2{
+    width: 346px;
+    height: 48px;
+}
+.tabs-cone .select-2 .box-2 input{
+    position: absolute;
+    top: 198px;
+    border: 1px solid #e0e0e0;
+    width:347px;
+    height: 50px;
+}
+.login .tabs-cone .buttons{
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    outline: none;
+    border: 0;
+    color:#999;
+    font-size: 14px;
+}
+.login .tabs-cone .buttons input {
+    width: 348px;
+    height: 50px;
+    color: #ffffff;
+    font-size:14px;
+    background-color: #ff6700;
+    border: 1px solid rgba(186, 186,186, 0.3);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.tabs-cone .other{
+    width: 348px;
+    height: 209.2px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.other .other-panel span{
+    width: 115.9px;
+    height:49.2px;
+    margin-top:50px;
+}
+.other .other-panel a{
+    color: #ff6700;
+    margin: 0;
+    margin-top:50px;
+
+}
+.other .links{
+width: 138.54px;
+height: 92px;
+text-align: center;
+float: right;
+}
+.links a{
+    color: #999; 
+    position: relative;
+    margin-top: 15px;
+}
+.links span{
+    color: #999;
+}
+.links a:hover{
+    color: #f56600;
+    }
+.login .other fieldset{
+      border: 0;
+      width: 348px;
+      height: 29.2px;
+      border-top:1px solid #bbbbbb;
+      text-align: center; 
+      padding-top:10px;
+     color: #bbbbbb;
+     margin: 0;
+    padding: 0;
+    margin-top: 120px;
+}
+.other .icon{
+    width: 348px;
+    height:37px;
+    text-align: center;
+}
+.other .icon .qq {
+    background-color:#0288d1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    margin: 0 17px;
+}
+.other .icon .icon-qq {
+    width: 18px;
+    height: 18px;
+    background-position: -19px 0px;
+    display: block;
+    margin: 4px auto 0;
+    vertical-align: middle;
+    background-image: url("./icons_type.png");
+}
+.other .icon .weibo {
+    background-color:#d32f2f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    margin: 0 17px;
+}
+.other .icon .icon-weibo {
+    width: 18px;
+    height: 18px;
+    background-position: -38px 0px;
+    display: block;
+    margin: 4px auto 0;
+    vertical-align: middle;
+    background-image: url("./icons_type.png");
+}
+
+.other .icon .pay{
+    background-color:#00aaee;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    margin: 0 17px;
+}
+.other .icon .icon-pay {
+    width: 25px;
+    height: 18px;
+    background-position: -57px 0px;
+    display: block;
+    margin: 4px auto 0;
+    vertical-align: middle;
+    background-image: url("./icons_type.png");
+    margin-top: 6px;
+    margin-left: 4px;
+}
+.other .icon .wechat{
+    background-color:#00d20d;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    display: inline-block;
+    margin: 0 17px;
+}
+.other .icon .icon-wechat{
+    width: 24px;
+    height: 18px;
+    background-position: -83px 0px;
+    display: block;
+    margin: 4px auto 0;
+    vertical-align: middle;
+    background-image: url("./icons_type.png");
+    margin-top: 6px;
+
+}
+.footer{
+    margin-bottom: 0px;
+
+}
+.footer .link-area ul{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer .link-area li{
+display:inline-block;
+color: #757575;
+}
+.footer .link-area span{
+    padding: 0 10px;
+    display:inline-block; 
+}
+.link-area li span:hover{
+    color: #333;
+    cursor: pointer;
+}
+.link-area li .active{
+    color: #333;
+
+}
+.footer .intro{
+    color: #9d9d9d;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="h-panel">
+        <div class="h-logo"></div>
+    </div>
+
+    <div class="back">
+        <div class="h-banner">
+            <div class="show">
+                <div class="login">
+                    <div class="tabs">
+                        <a class="link">帐号登录</a>
+                        <span class="line"></span>
+                        <a class="link-2">扫码登录</a>
+                    </div>
+                    <div class="tabs-cone">
+
+                        <div class="input-bg">
+                            <div class="select">
+                                <div class="box">
+                                    <input type="text" placeholder="邮箱/手机号码/小米ID"> </div>
+                            </div>
+
+                            <div class="select-2">
+                                <div class="box-2">
+                                    <input type="text" placeholder="密码"> </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="button" value="登录">
+                        </div>
+                        <div class="other">
+                            <span class="other-panel">
+                                <a href="">手机登录/注册</a>
+                            </span>
+                            <div class="links">
+                                <a href="">立即注册</a>
+                                <span>|</span>
+                                <a href="">忘记密码？</a>
+                            </div>
+                            <fieldset>
+                                <legend>其他方式登录</legend>
+                            </fieldset>
+                            <div class="icon">
+                                <div class="qq">
+                                    <i class="icon-qq"></i>
+                                </div>
+                                <div class="weibo">
+                                    <i class="icon-weibo"></i>
+                                </div>
+                                <div class="pay">
+                                    <i class="icon-pay"></i> 
+                                </div>
+
+                                <div class="wechat">
+                                    <i class="icon-wechat"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="link-area">
+            <ul>
+                <li><span class="active">简体</span> | </li>
+                <li><span>繁体</span> | </li>
+                <li><span>English</span> | </li>
+                <li><span>常见问题</span></li>
+
+
+            </ul>
+        </div>
+        <div class="intro">
+            小米公司版权所有-京ICP备10046444-<img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png">京公网安备11010802020134号-京ICP证110507号
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

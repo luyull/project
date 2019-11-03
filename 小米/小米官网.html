@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ptt/iconfont.css">
+    <link rel="stylesheet" href="./photo/iconfont.css">
+    <link rel="stylesheet" href="./photo/iconfont.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .app {
+            width: 1519.2px;
+            height: 1519.2px;
+        }
+
+        .app .header {
+            width: 1519.2px;
+            height: 140px;
+            color: #333;
+        }
+
+        .app .header .site-topbar {
+            color: #b0b0b0;
+            width: 1519.2px;
+            height: 40px;
+            background-color: #333333;
+            position: relative;
+            z-index: 30;
+            font-size: 12px;
+
+        }
+
+        .header .site-topbar .container {
+            width: 1226px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 40px;
+            color: #b0b0b0;
+        }
+
+        .header .container .topbar-nav {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            width: 730px;
+        }
+
+        .container .topbar-nav a {
+            color: #b0b0b0;
+            line-height: 40px;
+            display: inline-block;
+
+        }
+
+        .container .topbar-nav a:hover {
+            color: white;
+        }
+
+        .container .topbar-nav .code {
+            color: #b0b0b0;
+            line-height: 40px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .container .topbar-nav  .triangle {
+            border-width: 15px;
+            border-style: solid;
+            width: 0px;
+            border-color: transparent transparent #fff transparent;
+            left: 50%;
+            top: 10px;
+            margin-left: -18px;
+            position: absolute;
+            display: none;
+
+        }
+
+        .container .topbar-nav .code:hover .triangle {
+            display: block;
+
+        }
+
+        .container .topbar-nav .code:hover {}
+
+        .site-topbar .topbar-nav .hide-2 {
+            width: 120px;
+            height: 150px;
+            position: absolute;
+            display: none;
+
+        }
+
+        .container .topbar-nav .code:hover .hide-2 {
+            display: block;
+        }
+
+
+        .site-topbar .topbar-nav .hiden {
+            background-color: white;
+            width: 120px;
+            height: 150px;
+            box-shadow: 0 1px 5px #aaa;
+            position: absolute;
+            left: 50%;
+            margin-left: -98px;
+            transition: all 0.5s ease;
+        }
+
+        .site-topbar .topbar-nav .hide-1 {
+            background-image: url("./download.png");
+            display: block;
+            margin: 18px auto 12px;
+            width: 90px;
+            height: 90px;
+            background-size: cover;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            line-height: 15;
+        }
+
+
+
+        .container .topbar-nav .sep {
+            margin: 0 .3em;
+            color: #424242;
+        }
+
+        .container .topbar-cart {
+            position: relative;
+            float: right;
+            width: 120px;
+            height: 40px;
+            margin-left: 15px;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            font-size: 12px;
+        }
+
+        .container .topbar-cart a {
+            position: relative;
+            z-index: 32;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #b0b0b0;
+            background: #424242;
+            font-size: 13px;
+            transition: all .3s ease;
+
+        }
+
+        .container .topbar-cart a:hover {
+            background-color: white;
+            color: #ff6700;
+        }
+
+        .container .topbar-cart .cart {
+
+            text-align: center;
+            padding: 0;
+            width: 316px;
+            background-color: white;
+            position: absolute;
+            right: 0px;
+            height: 100px;
+            color: #b0b0b0;
+            line-height: 100px;
+            display: none;
+            border: 1px solid rgba(186, 186, 186, 0.3);
+
+        }
+
+        .container .topbar-cart:hover .cart {
+            display: block;
+
+        }
+
+        .container .topbar-info {
+            position: relative;
+            float: right;
+            height: 40px;
+            line-height: 40px;
+            width: 170px;
+        }
+
+        .container .topbar-info a {
+
+            color: #b0b0b0;
+            line-height: 40px;
+            display: inline-block;
+
+        }
+
+        .container .topbar-info a:hover {
+            color: white;
+        }
+
+        .container .topbar-info .sep {
+            margin: 0;
+
+            margin: 0 .3em;
+            color: #424242;
+
+        }
+
+        .header .site-header {
+            width: 1519.2px;
+            height: 100px;
+            color: #333;
+        }
+
+        .header .site-header .container-2 {
+            width: 1226px;
+            height: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #333;
+
+
+        }
+
+        .site-header .container-2 .header-logo {
+            position: relative;
+            display: block;
+            width: 55px;
+            height: 55px;
+
+            float: left;
+        }
+
+        .container-2 .header-logo .logo-1 {
+            background-color: #ff6700;
+            background-size: cover;
+            width: 55px;
+            height: 55px;
+            position: relative;
+            margin-top: 22px;
+        }
+        .container-2 .header-logo .logo-1::after{
+            content:"";
+            background-image: url("./mi-logo.png");
+            background-repeat:no-repeat;
+            width: 55px;
+            height: 55px;
+            display: block;
+            background-position: center;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: all .1s ease;
+        }
+        .container-2 .header-logo .logo-1::before{
+            content:""; 
+            display: block;
+            width: 55px;
+            height: 55px;
+            background-image: url("./mi-home.png");
+            background-repeat:no-repeat;
+            background-position: center;
+            left: -55px;
+            transition: all .3s ease;
+            position: absolute;
+        }
+        .container-2 .header-logo:hover .logo-1::before{
+            left: 0;
+        }
+        .container-2 .header-logo:hover .logo-1::after{
+            left: 55px;
+        }
+        li {
+            list-style: none;
+
+        }
+
+        .site-header .container-2 .header-nav {
+            float: left;
+            width: 850px;
+            height: 100px;
+            margin-top: 0px;
+        }
+
+        .site-header .header-nav .nav-list {
+            position: relative;
+            float: left;
+            width: 1100px;
+            height: 88px;
+            margin-left: 150px;
+            padding: 12px 0 0 30px;
+            list-style-type: none;
+            font-size: 16px;
+            margin-top: 5px;
+
+        }
+
+        .container-2 .nav-list li {
+            float: left;
+            padding: 26px 10px 38px;
+            color: #333;
+            
+
+        }
+
+        .container-2 .nav-list li a {
+            color: #333;
+            cursor: pointer;    
+
+        }
+
+        .container-2 .nav-list li a:hover {
+            color: #ff6700;
+        }
+
+        .nav-list li .link-0:hover {}
+
+        .container-2 .nav-list li .link-0 .link0 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-0:hover .link0 {
+            background-image: url("./first.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .container-2 .nav-list li .link-1 .link1 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-1:hover .link1 {
+            background-image: url("./second.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+           
+        }
+
+        .container-2 .nav-list li .link-2 .link2 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-2:hover .link2 {
+            background-image: url("./three.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .container-2 .nav-list li .link-3 .link3 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-3:hover .link3 {
+            background-image: url("./four.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .container-2 .nav-list li .link-4 .link4 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-4:hover .link4 {
+            background-image: url("./five.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .container-2 .nav-list li .link-5 .link5 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-5:hover .link5 {
+            background-image: url("./six.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .container-2 .nav-list li .link-6 .link6 {
+            display: none;
+        }
+
+        .container-2 .nav-list li .link-6:hover .link6 {
+            background-image: url("./seven.png");
+            width: 1556.2px;
+            height: 220px;
+            position: absolute;
+            right: 0px;
+            background-size: cover;
+            display: block;
+            z-index: 99;
+            box-shadow: 0 1px 5px #aaa;
+        }
+
+        .site-header .header-research {
+            height: 50px;
+            float: right;
+            width: 296px;
+            margin-top: 25px;
+        }
+
+        .site-header .header-research .research-form {
+            position: relative;
+            width: 296px;
+            height: 50px;
+            z-index: 20;
+        }
+
+        .header-research .research-form .box {
+            width: 295px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            border: 1px solid #e8e8e8;
+            outline: 0;
+            font-size: 12px;
+            color: #555;
+        }
+
+        .header-research .box p {
+            position: relative;
+            float: left;
+            margin: 0;
+            height: 17px;
+            text-align: center;
+            line-height: 19px;
+            background-color: #e0e0e0;
+            font-size: 12px;
+            top: 14px;
+            
+        }
+        .header-research .box p:hover{
+            background-color: #ff6700;
+            color: white;
+        }
+        .header-research .box i {
+            float: right;
+            font-size: 24px;
+            color: #616161;
+            width: 52px;
+            height: 50px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            border-left: 1px solid #e8e8e8;
+        }
+        
+
+        .header-research .box i:hover {
+            background-color: #ff6700;
+            color: white;
+            position: relative;
+        }
+        .header-research .box i::before{
+            position: relative;
+            top: 15px;
+            left: 13px;
+
+        }
+        .app .home {
+            width: 1226px;
+            height: 670px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .app .home .hero {
+            position: absolute;
+            margin-bottom: 26px;
+            height: 460px;
+            width: 1226px;
+            background-image: url("./logo.webp");
+            margin: 0px 0px;
+
+        }
+
+        .app .home .hero .left {
+            position: absolute;
+            left: 0px;
+            z-index: 21;
+            width: 234px;
+            height: 460px;
+            font-size: 14px;
+
+        }
+
+        .hero .left .left-list {
+            height: 420px;
+            border: 0;
+            color: #fff;
+            background: rgba(105, 101, 101, .6);
+            margin: 0;
+            padding: 20px 0;
+            list-style: none;
+            left: 30px;
+
+        }
+
+        .hero .left .left-list li {
+            width: 234px;
+            height: 42px;
+            position: relative;
+            display: block;
+            line-height: 42px;
+        }
+
+        .hero .left .left-list li a {
+            color: #fff;
+            margin-left: 30px;
+        }
+
+        .app .home .hero .center {}
+
+        .hero .left .left-list li i {
+            top: 12px;
+            right: 20px;
+            font-size: 23px;
+            line-height: 16px;
+            color: #e0e0e0;
+            position: absolute;
+            ;
+        }
+
+        .hero .left .left-list li:hover {
+            background-color: #ff6700;
+        }
+
+        .home .last {
+            width: 1240px;
+            height: 170px;
+            margin-top: 14px;
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .home .last .span {
+            width: 234px;
+            margin-right: 0px;
+            display: inline-block;
+        }
+
+        .home .last .span .clearfix {
+            margin: 0;
+            padding: 3px;
+            list-style-type: none;
+            font-size: 12px;
+            text-align: center;
+            background: #5f5750;
+            height: 164px;
+        }
+
+        .home .last .span .clearfix li {
+            position: relative;
+            float: left;
+            width: 70px;
+            height: 82px;
+            padding: 0 3px;
+        }
+
+        .home .last .span .clearfix li a {
+            display: block;
+            padding-top: 18px;
+            text-overflow: ellipsis;
+            color: #fff;
+            opacity: .7;
+            height: 45.2px;
+            transition: opacity .2s;
+        }
+
+
+        .home .last .span .clearfix li a .time {
+            background-image: url("./time.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .home .last .span .clearfix li a .miaosha {
+            font-size: 12px;
+            color: #fff;
+            border: 0;
+        }
+
+        .home .last .span .clearfix li a .house {
+            background-image: url("./house.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .home .last .span .clearfix li a .f {
+            background-image: url("./f.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .home .last .span .clearfix li a .mifen {
+            background-image: url("./mifen.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .home .last .span .clearfix li a .money {
+            background-image: url("./money.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .home .last .span .clearfix li a .chongzhi {
+            background-image: url("./chongzhi.png");
+            height: 24px;
+            width: 24px;
+            background-size: cover;
+            margin: 0 auto 4px;
+            display: block;
+            font-size: 12px;
+        }
+
+        .last .span2 {
+            width: 978px;
+            height: 170px;
+            position: absolute;
+            margin-left: 14px;
+            min-height: 1px;
+            display: inline-block;
+        }
+
+        .last .span2 .molist {
+            width: 978px;
+            height: 170px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .last .span2 .molist .mo-1 {
+            float: left;
+            width: 316px;
+            height: 170px;
+            background-image: url("./pic1.jpg");
+            background-size: cover;
+        }
+
+        .last .span2 .molist .mo-2 {
+            width: 316px;
+            height: 170px;
+            background-image: url("./pic2.jpg");
+            background-size: cover;
+            margin-left: 15px;
+            float: left;
+        }
+
+        .last .span2 .molist .mo-3 {
+            width: 316px;
+            height: 170px;
+            background-image: url("./pic3.jpg");
+            background-size: cover;
+            margin-left: 15px;
+            float: left;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="site-topbar">
+
+                <div class="container">
+                    <div class="topbar-nav">
+                        <a href="">小米商城</a>
+                        <span class="sep">|</span>
+                        <a href="">MIUI</a>
+                        <span class="sep">|</span>
+                        <a href="">loT</a>
+                        <span class="sep">|</span>
+                        <a href="">云服务</a>
+                        <span class="sep">|</span>
+                        <a href="">金融</a>
+                        <span class="sep">|</span>
+                        <a href="">有品</a>
+                        <span class="sep">|</span>
+                        <a href="">小爱开放平台</a>
+                        <span class="sep">|</span>
+                        <a href="">企业团购</a>
+                        <span class="sep">|</span>
+                        <a href="">资质证照</a>
+                        <span class="sep">|</span>
+                        <a href="">协议规则</a>
+                        <span class="sep">|</span>
+                        
+
+                        <a class="code" href=""> 下载app
+                                <div class="triangle"></div>
+
+                            <div class="hide-2">
+                                <div class="hiden">
+                                    <i class="hide-1">小米商城APP</i>
+
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <span class="sep">|</span>
+                        <a href="">Select Location</a>
+
+                    </div>
+                    <div class="topbar-cart">
+                        <a class="iconfont icon-icon-test" href="">购物车
+                            <span>（0）</span>
+                            <div class="cart">购物车中还没有商品，赶紧选购吧！</div>
+                        </a>
+                    </div>
+                    <div class="topbar-info">
+                        <a href="">登录</a>
+                        <span class="sep">|</span>
+                        <a href="">注册</a>
+                        <span class="sep">|</span>
+                        <a href="">消息通知</a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-header">
+                <div class="container-2">
+
+                    <div class="header-logo">
+                        <div class="logo-1"></div>
+
+                    </div>
+                    <div class="header-nav">
+
+                        <ul class="nav-list">
+                            <li>
+                                <a class="link-0" href="">小米手机
+                                    <div class="link0"></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a class="link-1">Redmi红米
+                                    <div class="link1"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-2">电视
+                                    <div class="link2"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-3">笔记本
+                                    <div class="link3"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-4">家电
+                                    <div class="link4"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-5">路由器
+                                    <div class="link5"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-6">智能硬件
+                                    <div class="link6"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-7">服务
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-8">社区
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-research">
+                        <div class="research-form">
+                            <div class="box">
+                                <p>小米手机9 pro 5 Redmi红米Note8</p>
+                                <i class="iconfont icon-icon-test1"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="hero">
+                <div class="left">
+                    <ul class="left-list">
+                        <li>
+                            <a href="list-1">手机 电话卡</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-3">电视 盒子</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-4">笔记本 平板</a>
+                            <i class="iconfont icon-icon-test2"></i>
+
+                        </li>
+                        <li>
+                            <a href="list-5">家电 插线板</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-6">出行 穿戴</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-7">智能 路由器</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-8">电源 配件</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-9">健康 儿童</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-0">耳机 音箱</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                        <li>
+                            <a href="list-11">生活箱包</a>
+                            <i class="iconfont icon-icon-test2"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="last">
+                <div class="span">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">
+                                <div class="time"></div>
+                                <div class="miaosha">小米秒杀</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="house"></div>
+                                <div class="tuangou">企业团购</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="f"></div>
+                                <div class="通道">F码通道</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="mifen"></div>
+                                <div class="mifenka">米粉卡</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="money"></div>
+                                <div class="new">以旧换新</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="chongzhi"></div>
+                                <div class="huafei">话费充值</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span2">
+                    <ul class="molist">
+                        <li class="mo-1"></li>
+                        <li class="mo-2"></li>
+                        <li class="mo-3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
