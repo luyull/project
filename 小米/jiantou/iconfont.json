@@ -20,11 +20,18 @@
       "unicode_decimal": 58940
     },
     {
-      "icon_id": "8777512",
-      "name": "arrow_right",
+      "icon_id": "8777510",
+      "name": "arrow_left",
       "font_class": "icon-test2",
       "unicode": "e658",
       "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "8777512",
+      "name": "arrow_right",
+      "font_class": "icon-test3",
+      "unicode": "e659",
+      "unicode_decimal": 58969
     }
   ]
 }
