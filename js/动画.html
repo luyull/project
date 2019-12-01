@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+     .line1,.line2,.line3{
+         width: 200px;
+         height: 50px;
+         background-color: red;
+         margin-top: 10px;
+     }
+    
+    </style>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</head>
+<body>
+  <script>
+  
+  var oBox = document.getElementsByClassName("line1")[0];
+  var timer=null;
+  
+    oBox.onmouseover = function(){
+        clearInterval(timer)
+      var _this = this;
+      timer = setInterval(function(){
+        if(_this.offsetWidth>=500){
+            clearInterval(timer)
+        }
+        else{
+            _this.style.width = (_this.offsetWidth+10) +"px";  
+        }
+       
+       
+      },16)
+    }
+  oBox.onmouseout = function(){
+    clearInterval(timer)
+    var _this = this;
+    timer = setInterval(function(){
+        if(_this.offsetWidth<=200){
+            clearInterval(timer)
+        }
+        else{
+            _this.style.width = (_this.offsetWidth-10) +"px";   
+        }
+        
+       
+  },16)
+}
+    
+  
+  
+  
+  </script>  
+</body>
+</html>

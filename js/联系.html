@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 120px;
+            border: 1px solid black;
+            margin-left: 400px;
+            padding: 0;
+        }
+
+        .box .top {
+            background-color: black;
+            height: 60px;
+            color: white;
+            font-size: 17px;
+
+        }
+
+        .top1,
+        .top2,
+        .top3 {
+            display: inline-block;
+            width: 85px;
+            background-color: grey;
+            height: 60px;
+            float: left;
+        }
+    </style>
+    <div class="box">
+        <div class="top">
+            <div class="top1">第一节课</div>
+            <div class="top2">第二节课</div>
+            <div class="top3">第三节课</div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</head>
+
+<body>
+    <script>
+        var tOp = document.getElementsByTagName("top");
+        for (var i = 0; i < tOp.length; i++) {
+            tOp[i].onmouseover = function () {
+                for (var j = 0; j < tOp.length; j++) {
+                    tOp[j].style.backgroundColor = "black";
+
+
+                } this.classList.add("top1");
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

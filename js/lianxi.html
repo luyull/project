@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var con = confirm("吃午餐么");
+    console.log(con);
+    var num = prompt("几个人吃");
+    console.log(num);
+    var arr = [];
+    var foodlist = [];
+    for(var i=0;i<num;i++){
+       var username = prompt("第"+(i+1)+"个人叫什么名字");
+       arr.push(username);
+    }
+    for(var i=0;i<num;i++){
+        var food = "";
+       
+        var ran = parseInt(Math.random()*10);
+
+    switch(ran){
+      case 1:food="火锅";break;
+      case 2:food="烧烤";break;
+      case 3:food="烤肉";break;
+      case 4:food="锅包肉";break;
+      case 5:food="涮串";break;
+      case 6:food="麻辣烫";break;
+      case 7:food="饺子";break;
+      case 8:food="包子";break;
+      default:food="了"
+    }
+
+    foodlist.push(arr[i]+"吃"+food);
+    console.log(foodlist);
+
+
+
+    }  
+    
+    
+    </script>
+</body>
+</html>
