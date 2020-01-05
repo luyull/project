@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+.line1,.line2,.line3{
+font-size: 30px;
+margin-top: 20px;
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="box">
+        <div class="line1">
+        <span>text1</span>
+        <button class="upbtn">向上</button>
+        <button class="downbtn">向下</button>
+    </div>
+
+    <div class="line2">
+        <span>text2</span>
+        <button class="upbtn">向上</button>
+        <button class="downbtn">向下</button>
+    </div>
+    <div class="line3">
+        <span>text3</span>
+        <button class="upbtn">向上</button>
+        <button class="downbtn">向下</button>
+    </div>
+</div>
+<script>
+     var upBtn = document.querySelectorAll(".upbtn");
+     var downBtn = document.querySelectorAll(".downbtn");
+     var line1 = document.querySelector(".line1");
+     var line2 = document.querySelector(".line2");
+     var line3 = document.querySelector(".line3");
+     var oBox = document.querySelector(".box");
+    
+ for(var i=0;i<upBtn.length;i++){
+     upBtn[i].onclick = function(){
+         var parent = this.parentElement;
+         var preParent = parent.previouseElementSibling;
+         if(preParent){
+            oBox.insertBefore(parent,preParent)
+         }
+         else{
+             console.log("到顶了");
+         }
+     }
+     downBtn[i].onclick = function(){
+         var parent = this.parentElement;
+         var nextParent = parent.nextElementSibling;
+         if(nextParent){
+            oBox.insertBefore(nextParent,parent) 
+         }
+         else{
+             console.log("到di了");
+         }
+     }
+ }
+
+
+
+</script>
+
+
+</body>
+
+</html>
